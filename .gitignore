@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+tf_env/
+bw/
+
+bw/
+data/
+*.npz
+*.npy
+*.pt
+*.pth
+*.h5
+*.npz
+*.jsonl
+
+# Model weights
+*.pt
+*.ckpt
+*.model
+*.bin
+
+# XGBoost model files
+*.json
+
+# Plots and outputs
+*.png
+
+# Logs
+*.log
+*.txt
+
+# SLURM
+slurm-*.out
+slurm-*.err
+
+# System files
+.DS_Store

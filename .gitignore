@@ -27,7 +27,7 @@ data/
 *.json
 
 # Plots and outputs
-*.png
+
 
 # Logs
 *.log

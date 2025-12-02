@@ -1,4 +1,10 @@
+import time
+t = time.time()
+print("importing matplotlib...")
+import matplotlib
+matplotlib.use('Agg')  # Do this BEFORE importing pyplot
 import matplotlib.pyplot as plt
+print("matplotlib import took:", time.time() - t)
 import numpy as np
 
 def plot_clean_confusion_matrix(tn, fp, fn, tp, title, savepath):
@@ -46,10 +52,10 @@ def plot_clean_confusion_matrix(tn, fp, fn, tp, title, savepath):
 # =======================
 if __name__ == "__main__":
     plot_clean_confusion_matrix(
-    tn=1157,
-    fp=11,
-    fn=6,
-    tp=513,
-    title="Confusion Matrix – Final Model – struct + PWM",
-    savepath="clean_confusion_struct_pwm.png"
+    tn=225,
+    fp=7,
+    fn=26,
+    tp=78,
+    title="Confusion Matrix – Sequence Only for CTCF",
+    savepath="clean_confusion_seq_ctcf.png"
 )
